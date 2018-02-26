@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_item_auto_recyclerview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ic_logo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/lbl_marca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marca"
+                android:textColor="#000"
+                android:layout_toRightOf="@id/ic_logo"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/lbl_modelo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_toRightOf="@id/ic_logo"
+                android:layout_below="@id/lbl_marca"
+                android:text="Modelo"/>
+
+            <TextView
+                android:id="@+id/lbl_año"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Año"
+                android:textColor="#000"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/lbl_modelo"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
